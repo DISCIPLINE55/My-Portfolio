@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discipline's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discipline's Portfolio - Web Developer">
+      <!-- Essential SEO Meta Tags -->
+    <meta name="keywords" content="Web Developer, Portfolio, HTML, CSS, JavaScript, Discipline">
+    <meta name="author" content="Ismail Ibrahim Mensah (Discipline)">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#222">
+
+    <!-- Open Graph (For Social Media Sharing) -->
+    <meta property="og:title" content="Discipline's Portfolio - Web Developer">
+    <meta property="og:description" content="Explore the portfolio of Ismail Ibrahim Mensah, a passionate web developer specializing in HTML, CSS, and JavaScript.">
+    <meta property="og:image" content="images/Main1.jpg">
+    <meta property="og:url" content="https://your-portfolio-link.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Discipline's Portfolio">
+    <meta name="twitter:description" content="Discover my web development projects and expertise in HTML, CSS, and JavaScript.">
+    <meta name="twitter:image" content="images/Main1.jpg">
+    <title>Discipline's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 <body>
+
   <!-- Header Section -->
   <header>
     <div class="container">
-      <h1>Ismail Ibrahim Mensah<span style="color: brown;">(Discipline)</span></h1>
+      <h1>Ismail Ibrahim Mensah <span class="highlight">(Discipline)</span></h1>
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
       <nav>
         <ul>
           <li><a href="#intro">Home</a></li>
@@ -26,20 +51,20 @@
   <section id="intro" class="intro">
     <div class="container">
       <h2>Welcome to My Portfolio</h2>
-      <p>I'm a passionate web developer with a strong foundation in <mark style="background-color: rgb(95, 95, 251);"> HTML, CSS, and JavaScript.</mark> I create visually stunning and highly responsive websites to deliver exceptional user experiences.</p>
+      <p>I'm a passionate web developer specializing in <mark>HTML, CSS, and JavaScript.</mark></p>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
-    <div class="container">
-      <div class="about-content">
-        <img src="images/Main1.jpg" alt="Your Photo">
-        <div>
-          <h2>About Me</h2>
-          <p>I am a passionate and detail-oriented web developer with a strong foundation in HTML, CSS, and JavaScript. My journey into web development began with a curiosity to create visually appealing and functional websites, and it has since evolved into a full-fledged career aspiration. I specialize in building responsive, user-friendly interfaces that provide seamless experiences across devices. My work is driven by a commitment to innovation, continuous learning, and delivering solutions that meet client needs effectively. Beyond coding, I enjoy exploring new technologies and collaborating on projects that challenge my skills and creativity. Whether working independently or as part of a team, I thrive in dynamic environments that push boundaries and foster growth. Feel free to explore my portfolio to see how I transform ideas into impactful digital experiences.
-            I bring innovative ideas to life through code, ensuring every project is both functional and visually appealing. I thrive on solving challenges and continuously improving my craft to deliver top-notch solutions.</p>
-        </div>
+    <div class="container about-content">
+      <img src="images/Main1.jpg" alt="Ismail Ibrahim Mensah">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I am a passionate and detail-oriented web developer with a strong foundation in HTML, CSS, and JavaScript. My journey into web development began with a curiosity to create visually appealing and functional websites, and it has since evolved into a full-fledged career aspiration. I specialize in building responsive, user-friendly interfaces that provide seamless experiences across devices. My work is driven by a commitment to innovation, continuous learning, and delivering solutions that meet client needs effectively. Beyond coding, I enjoy exploring new technologies and collaborating on projects that challenge my skills and creativity. Whether working independently or as part of a team, I thrive in dynamic environments that push boundaries and foster growth. Feel free to explore my portfolio to see how I transform ideas into impactful digital experiences.
+          I bring innovative ideas to life through code, ensuring every project is both functional and visually appealing. I thrive on solving challenges and continuously improving my craft to deliver top-notch solutions.
+        </p>
       </div>
     </div>
   </section>
@@ -51,19 +76,19 @@
       <div class="project-grid">
         <div class="project-card">
           <h3>Project 1</h3>
-          <p>Responsive Grocery Website with a shopping cart and dynamic features.</p>
+          <p>Responsive Grocery Website</p>
         </div>
         <div class="project-card">
           <h3>Project 2</h3>
-          <p>Senior High School Platform with admissions and course management.</p>
+          <p>SHS Platform for Admissions</p>
         </div>
         <div class="project-card">
           <h3>Project 3</h3>
-          <p>Custom E-commerce UI with modern design and accessibility features.</p>
+          <p>E-commerce UI Design</p>
         </div>
         <div class="project-card">
           <h3>Project 4</h3>
-          <p>Personal Blog Platform with SEO and analytics integration.</p>
+          <p>Personal Blog Platform</p>
         </div>
       </div>
     </div>
@@ -73,7 +98,6 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>If you'd like to work with me or learn more about what I do, feel free to reach out!</p>
       <form action="#" method="post">
         <input type="text" placeholder="Your Name" required>
         <input type="email" placeholder="Your Email" required>
@@ -87,14 +111,16 @@
   <footer>
     <div class="container">
       <p>&copy; <span id="currentYear"></span> Discipline. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://twitter.com" target="_blank">Twitter</a>
-        <a href="https://linkedin.com" target="https://www.linkedin.com/in/ismail-ibrahim-mensah-81a920312?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvL4OckOdT4C8dr6dQNRH%2FQ%3D%3D">LinkedIn</a>
-        <a href="https://github.com" target="C:\Users\User\OneDrive\Documents\GitHub\DISCIPLINE-">GitHub</a>
-        <a href="https://facebk.com" target="_blank">Facebook</a>
-        <a href="https://whatsapp.com" target="_blank">Whatsapp</a>
-      </div>
     </div>
+
+    <div class="social-links">
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/ismail-ibrahim-mensah-81a920312?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvL4OckOdT4C8dr6dQNRH%2FQ%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/DISCIPLINE55/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.facebook.com/Ismail Ibrahim Mensah" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://wa.me/233558852609" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
   </footer>
 
   <script src="script.js"></script>
